@@ -26,5 +26,12 @@ namespace Test2MVC.Controllers
 
             return View();
         }
+
+        public ActionResult Team()
+        {
+            ViewBag.Message = "Your team members page.";
+
+            return View();
+        }
     }
 }
