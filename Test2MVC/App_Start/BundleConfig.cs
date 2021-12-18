@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace Photography_MVC
+namespace Test2MVC
 {
     public class BundleConfig
     {
