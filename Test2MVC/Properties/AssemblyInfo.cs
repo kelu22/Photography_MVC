@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Test2MVC")]
+[assembly: AssemblyTitle("Photography_MVC")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Netcracker Tech")]
-[assembly: AssemblyProduct("Test2MVC")]
+[assembly: AssemblyProduct("Photography_MVC")]
 [assembly: AssemblyCopyright("Copyright © Netcracker Tech 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
