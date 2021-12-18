@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace Test2MVC
+namespace Photography_MVC
 {
     public class FilterConfig
     {
