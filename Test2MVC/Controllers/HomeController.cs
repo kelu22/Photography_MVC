@@ -27,9 +27,15 @@ namespace Test2MVC.Controllers
             return View();
         }
 
-        public ActionResult Team()
+        public ActionResult Rural()
         {
-            ViewBag.Message = "Your team members page.";
+            ViewBag.Message = "Rural photography from around the world.";
+
+            return View();
+        }
+        public ActionResult Urban()
+        {
+            ViewBag.Message = "Urban photography from around the world.";
 
             return View();
         }
