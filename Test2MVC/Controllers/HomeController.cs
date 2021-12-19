@@ -15,7 +15,7 @@ namespace Photography_MVC.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "ISEM 551 Assignment 1";
 
             return View();
         }
