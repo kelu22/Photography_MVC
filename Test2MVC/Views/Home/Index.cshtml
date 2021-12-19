@@ -1,7 +1,9 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
+<head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
 <div class="jumbotron">
     <h1>Happy Lens</h1>
     <p class="lead">Happy Lens is a space for those photography passionates that are looking for the perfect picture with only their camera.</p>
@@ -11,18 +13,18 @@
     <div class="col-md-4">
         <h2>Know the team</h2>
         <p>
-           Application created for photography enthustiasts looking for inspiration. You can contact us here:
+            Application created for photography enthustiasts looking for inspiration. You can contact us here:
         </p>
-        <p><a class="btn btn-default" @Html.ActionLink("Contact","Contact", "Home")</a></p>
+        <p><a href="Home/Contact"><i class="fas fa-user-friends fa-3x"></i></a></p>
     </div>
     <div class="col-md-4">
         <h2>Rural Photography</h2>
         <p>Here you will have access to dreamy rural photographies from all around the world:</p>
-        <p><a class="btn btn-default" @Html.ActionLink("Rural","Rural", "Home")</a></p>
+        <p><a href="Home/Rural"><i class="fas fa-city fa-3x"></i></a></p>
     </div>
     <div class="col-md-4">
         <h2>Urban Photography</h2>
         <p>Pictures for those that are looking for a more cosmopolitan athmosphere:</p>
-        <p><a class="btn btn-default" @Html.ActionLink("Urban","Urban", "Home")</a></p>
+        <p><a href="Home/Rural"><i class="fas fa-farm fa-3x"></i></a></p>
     </div>
 </div>
