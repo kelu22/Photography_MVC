@@ -135,6 +135,17 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\rural1.jpg" />
+    <Content Include="images\rural10.jpg" />
+    <Content Include="images\rural11.jfif" />
+    <Content Include="images\rural2.jpg" />
+    <Content Include="images\rural3.jfif" />
+    <Content Include="images\rural4.jfif" />
+    <Content Include="images\rural5.jfif" />
+    <Content Include="images\rural6.jpeg" />
+    <Content Include="images\rural7.jpg" />
+    <Content Include="images\rural8.jpeg" />
+    <Content Include="images\rural9.jfif" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
