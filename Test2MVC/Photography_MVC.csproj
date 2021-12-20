@@ -146,6 +146,17 @@
     <Content Include="images\rural7.jpg" />
     <Content Include="images\rural8.jpeg" />
     <Content Include="images\rural9.jfif" />
+    <Content Include="images\urban1.jpeg" />
+    <Content Include="images\urban10.jpg" />
+    <Content Include="images\urban11.jfif" />
+    <Content Include="images\urban2.jpeg" />
+    <Content Include="images\urban3.jfif" />
+    <Content Include="images\urban4.jfif" />
+    <Content Include="images\urban5.jfif" />
+    <Content Include="images\urban6.jpeg" />
+    <Content Include="images\urban7.jpg" />
+    <Content Include="images\urban8.jpeg" />
+    <Content Include="images\urban9.jfif" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
