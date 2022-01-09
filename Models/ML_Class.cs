@@ -21,5 +21,10 @@ namespace Models
 
 
         //Any properties related to the photographies
+        [DisplayName("ImageType")]
+        public string ImageType { get; set; }
+
+        [DisplayName("ImageURL")]
+        public string ImageURL { get; set; }
     }
 }
