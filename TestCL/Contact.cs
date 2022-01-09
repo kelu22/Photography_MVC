@@ -7,7 +7,7 @@ using Models;
 using DataAccess;
 using System.Data;
 
-namespace TestCL
+namespace Business
 {
     public class Contact
     {
