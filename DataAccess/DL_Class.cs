@@ -41,6 +41,37 @@ namespace DataAccess
 
             return dsContacts;
         }
+
+        public static DataSet GetImagesUsingDBWithConfig()
+        {
+            DataTable dt = new DataTable();
+            DataSet dsImages = new DataSet();
+
+            //Config Details and SQL Connection
+            var cs = ConfigurationManager.ConnectionStrings["ContactsConnection_DEV"].ConnectionString;
+
+            SqlConnection con = new SqlConnection(cs);
+            string sql = null;
+            sql = "Select * from Images";
+
+            //Open SQL Connection
+            con.Open();
+
+            SqlCommand command;
+            command = new SqlCommand(sql, con);
+
+            SqlDataReader dataReader;
+            dataReader = command.ExecuteReader();
+
+            dt.Load(dataReader);
+            dsImages.Tables.Add(dt);
+
+            dataReader.Close();
+            command.Dispose();
+            con.Close();
+
+            return dsImages;
+        }
     }
 }
 
