@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Business;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+
 
 namespace Photography_MVC.Controllers
 {
@@ -24,7 +26,8 @@ namespace Photography_MVC.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
-            return View();
+            var contacts = Contacts.GetContactData(); 
+            return View(contacts);
         }
 
         public ActionResult Rural()

@@ -25,7 +25,7 @@ namespace Models
         public string ImageType { get; set; }
 
         [DisplayName("ImageName")]
-        public string ImageType { get; set; }
+        public string ImageName { get; set; }
 
         [DisplayName("ImageURL")]
         public string ImageURL { get; set; }
