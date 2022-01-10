@@ -1,4 +1,5 @@
 ﻿using Business;
+using Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,7 +35,8 @@ namespace Photography_MVC.Controllers
         {
             ViewBag.Message = "Rural photography from around the world.";
 
-            return View();
+            var images = Contacts.GetImagesData();
+            return View(images);
         }
         public ActionResult Urban()
         {
