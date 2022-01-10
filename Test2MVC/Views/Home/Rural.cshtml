@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IEnumerable<Models.ML_Class>
+
+@{
     ViewBag.Title = "Rural";
 }
 
@@ -23,9 +25,9 @@
         padding: 10px;
     }
 
-    .column img {
+        .column img {
             margin-top: 12px;
-    }
+        }
     /* Clear floats after the columns */
     .row:after {
         content: "";
@@ -40,21 +42,20 @@
 
     <div class="row">
         <div class="column">
-            <img src="https://cdn.sanity.io/images/0vv8moc6/medec/641d0a43fd126eab5dfe4464617ec5035409aedb-3000x2000.jpg" style="width:100%">
-            <img src="https://cdn.sanity.io/images/0vv8moc6/medec/641d0a43fd126eab5dfe4464617ec5035409aedb-3000x2000.jpg" style="width:100%">
-            <img src="~/images/rural2.jpg" style="width:100%" />
-            <img src="~/images/rural3.jfif" style="width:100%">
-            <img src="~/images/rural4.jfif" style="width:100%">
-            <img src="~/images/rural5.jfif" style="width:100%">
-            <img src="~/images/rural11.jfif" style="width:100%">
+            @foreach (var item in Model){
+                if (item.ImageType == "rural")
+                {
+                    <img src=@Html.DisplayFor(modelItem => item.ImageURL)  style="width:100%" />
+                }
+            }
         </div>
-        <div class="column">
+        @*<div class="column">
             <img src="~/images/rural6.jpeg" style="width:100%">
             <img src="~/images/rural7.jpg" style="width:100%">
             <img src="~/images/rural8.jpeg" style="width:100%">
             <img src="~/images/rural9.jfif" style="width:100%">
             <img src="~/images/rural10.jpg" style="width:100%">
-        </div>
+        </div>*@
     </div>
 </body>
 

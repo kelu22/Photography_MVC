@@ -69,7 +69,7 @@ namespace Business
             var imageList = new List<ML_Class>();
 
             DataSet dsImages = new DataSet();
-            dsImages = DL_Class.GetContactUsingDBWithConfig();
+            dsImages = DL_Class.GetImagesUsingDBWithConfig();
 
             //Transfer DataSet to Object
             if (dsImages.Tables.Count > 0)
