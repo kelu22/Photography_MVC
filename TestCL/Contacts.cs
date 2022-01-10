@@ -62,5 +62,26 @@ namespace Business
 
             return contactList;
         }
+
+        public static List<ML_Class> GetImagesData()
+        {
+            ML_Class image = new ML_Class();
+            var imageList = new List<ML_Class>();
+
+            DataSet dsImages = new DataSet();
+            dsImages = DL_Class.GetContactUsingDBWithConfig();
+
+            //Transfer DataSet to Object
+            if (dsImages.Tables.Count > 0)
+            {
+                imageList = dsImages.Tables[0].AsEnumerable().Select(m => new ML_Class()
+                {
+                    ImageType = Convert.ToString(m["ImageType"]),
+                    ImageURL = Convert.ToString(m["ImageURL"])
+                }).ToList();
+            }
+
+            return imageList;
+        }
     }
 }
