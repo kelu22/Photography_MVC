@@ -40,9 +40,11 @@
     <h2>@ViewBag.Title</h2>
     <h3>@ViewBag.Message</h3>
 
+
     <div class="row">
         @foreach (var item in Model)
         {
+
             if (item.ImageType == "rural")
             {
                 <div class="column">
@@ -50,13 +52,6 @@
                 </div>
             }
          }
-                @*<div class="column">
-                    <img src="~/images/rural6.jpeg" style="width:100%">
-                    <img src="~/images/rural7.jpg" style="width:100%">
-                    <img src="~/images/rural8.jpeg" style="width:100%">
-                    <img src="~/images/rural9.jfif" style="width:100%">
-                    <img src="~/images/rural10.jpg" style="width:100%">
-                </div>*@
             </div>
 </body>
 

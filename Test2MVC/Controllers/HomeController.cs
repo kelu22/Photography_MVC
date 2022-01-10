@@ -41,8 +41,8 @@ namespace Photography_MVC.Controllers
         public ActionResult Urban()
         {
             ViewBag.Message = "Urban photography from around the world.";
-
-            return View();
+            var images = Contacts.GetImagesData();
+            return View(images);
         }
     }
 }
