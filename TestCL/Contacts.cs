@@ -46,8 +46,12 @@ namespace Business
             ML_Class contact = new ML_Class();
             var contactList = new List<ML_Class>();
 
+            //2nd assignment
             DataSet dsContacts = new DataSet();
             dsContacts = DL_Class.GetContactUsingDBWithConfig();
+
+            //3rd assignment - Get info from DB but the connection string details from web.conf file
+
 
             //Transfer DataSet to Object
             if (dsContacts.Tables.Count > 0)

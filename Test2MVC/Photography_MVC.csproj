@@ -135,28 +135,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="images\rural1.jpg" />
-    <Content Include="images\rural10.jpg" />
-    <Content Include="images\rural11.jfif" />
-    <Content Include="images\rural2.jpg" />
-    <Content Include="images\rural3.jfif" />
-    <Content Include="images\rural4.jfif" />
-    <Content Include="images\rural5.jfif" />
-    <Content Include="images\rural6.jpeg" />
-    <Content Include="images\rural7.jpg" />
-    <Content Include="images\rural8.jpeg" />
-    <Content Include="images\rural9.jfif" />
-    <Content Include="images\urban1.jpeg" />
-    <Content Include="images\urban10.jpg" />
-    <Content Include="images\urban11.jfif" />
-    <Content Include="images\urban2.jpeg" />
-    <Content Include="images\urban3.jfif" />
-    <Content Include="images\urban4.jfif" />
-    <Content Include="images\urban5.jfif" />
-    <Content Include="images\urban6.jpeg" />
-    <Content Include="images\urban7.jpg" />
-    <Content Include="images\urban8.jpeg" />
-    <Content Include="images\urban9.jfif" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -189,6 +167,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="images\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
