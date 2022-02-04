@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="MyPhotographyInfoService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpsBinding_IMyPhotographyInfoService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:53024/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:53024/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:53024/Service1.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMyPhotographyInfoService_GetImagesUsingDBWithConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetImagesUsingDBWithConfig" />
+  </wsdl:message>
+  <wsdl:message name="IMyPhotographyInfoService_GetImagesUsingDBWithConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetImagesUsingDBWithConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMyPhotographyInfoService_GetContactUsingDBWithConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactUsingDBWithConfig" />
+  </wsdl:message>
+  <wsdl:message name="IMyPhotographyInfoService_GetContactUsingDBWithConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactUsingDBWithConfigResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IMyPhotographyInfoService">
+    <wsdl:operation name="GetImagesUsingDBWithConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMyPhotographyInfoService/GetImagesUsingDBWithConfig" message="tns:IMyPhotographyInfoService_GetImagesUsingDBWithConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMyPhotographyInfoService/GetImagesUsingDBWithConfigResponse" message="tns:IMyPhotographyInfoService_GetImagesUsingDBWithConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactUsingDBWithConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMyPhotographyInfoService/GetContactUsingDBWithConfig" message="tns:IMyPhotographyInfoService_GetContactUsingDBWithConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMyPhotographyInfoService/GetContactUsingDBWithConfigResponse" message="tns:IMyPhotographyInfoService_GetContactUsingDBWithConfig_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IMyPhotographyInfoService" type="tns:IMyPhotographyInfoService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetImagesUsingDBWithConfig">
+      <soap:operation soapAction="http://tempuri.org/IMyPhotographyInfoService/GetImagesUsingDBWithConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactUsingDBWithConfig">
+      <soap:operation soapAction="http://tempuri.org/IMyPhotographyInfoService/GetContactUsingDBWithConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpsBinding_IMyPhotographyInfoService" type="tns:IMyPhotographyInfoService">
+    <wsp:PolicyReference URI="#BasicHttpsBinding_IMyPhotographyInfoService_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetImagesUsingDBWithConfig">
+      <soap:operation soapAction="http://tempuri.org/IMyPhotographyInfoService/GetImagesUsingDBWithConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactUsingDBWithConfig">
+      <soap:operation soapAction="http://tempuri.org/IMyPhotographyInfoService/GetContactUsingDBWithConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MyPhotographyInfoService">
+    <wsdl:port name="BasicHttpBinding_IMyPhotographyInfoService" binding="tns:BasicHttpBinding_IMyPhotographyInfoService">
+      <soap:address location="http://localhost:53024/Service1.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpsBinding_IMyPhotographyInfoService" binding="tns:BasicHttpsBinding_IMyPhotographyInfoService">
+      <soap:address location="https://localhost:50230/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

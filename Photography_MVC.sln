@@ -6,10 +6,15 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Photography_MVC", "Test2MVC\Photography_MVC.csproj", "{D2E413EC-5271-41B0-84F5-53AFEF84A8D9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "TestCL\BusinessLayer.csproj", "{3DBE001B-07F1-47CB-904B-562FBDAF2310}"
+	ProjectSection(ProjectDependencies) = postProject
+		{66D252D4-BEE5-4B86-9230-CC264B909273} = {66D252D4-BEE5-4B86-9230-CC264B909273}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{BE5D48A6-40DF-4B25-BD39-EBD7069C4FFF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{669ED850-47E0-43CC-919F-8496340976F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPhotographyService", "MyPhotographyService\MyPhotographyService.csproj", "{66D252D4-BEE5-4B86-9230-CC264B909273}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +110,26 @@ Global
 		{669ED850-47E0-43CC-919F-8496340976F8}.Release|x64.Build.0 = Release|Any CPU
 		{669ED850-47E0-43CC-919F-8496340976F8}.Release|x86.ActiveCfg = Release|Any CPU
 		{669ED850-47E0-43CC-919F-8496340976F8}.Release|x86.Build.0 = Release|Any CPU
+		{66D252D4-BEE5-4B86-9230-CC264B909273}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66D252D4-BEE5-4B86-9230-CC264B909273}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66D252D4-BEE5-4B86-9230-CC264B909273}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{66D252D4-BEE5-4B86-9230-CC264B909273}.Debug|ARM.Build.0 = Debug|Any CPU
+		{66D252D4-BEE5-4B86-9230-CC264B909273}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{66D252D4-BEE5-4B86-9230-CC264B909273}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{66D252D4-BEE5-4B86-9230-CC264B909273}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{66D252D4-BEE5-4B86-9230-CC264B909273}.Debug|x64.Build.0 = Debug|Any CPU
+		{66D252D4-BEE5-4B86-9230-CC264B909273}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{66D252D4-BEE5-4B86-9230-CC264B909273}.Debug|x86.Build.0 = Debug|Any CPU
+		{66D252D4-BEE5-4B86-9230-CC264B909273}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66D252D4-BEE5-4B86-9230-CC264B909273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66D252D4-BEE5-4B86-9230-CC264B909273}.Release|ARM.ActiveCfg = Release|Any CPU
+		{66D252D4-BEE5-4B86-9230-CC264B909273}.Release|ARM.Build.0 = Release|Any CPU
+		{66D252D4-BEE5-4B86-9230-CC264B909273}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{66D252D4-BEE5-4B86-9230-CC264B909273}.Release|ARM64.Build.0 = Release|Any CPU
+		{66D252D4-BEE5-4B86-9230-CC264B909273}.Release|x64.ActiveCfg = Release|Any CPU
+		{66D252D4-BEE5-4B86-9230-CC264B909273}.Release|x64.Build.0 = Release|Any CPU
+		{66D252D4-BEE5-4B86-9230-CC264B909273}.Release|x86.ActiveCfg = Release|Any CPU
+		{66D252D4-BEE5-4B86-9230-CC264B909273}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

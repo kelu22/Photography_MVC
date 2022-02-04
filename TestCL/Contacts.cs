@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Models;
 using DataAccess;
 using System.Data;
+using TestCL;
 
 namespace Business
 {
@@ -45,13 +46,15 @@ namespace Business
         {
             ML_Class contact = new ML_Class();
             var contactList = new List<ML_Class>();
+            DataSet dsContacts = new DataSet();
+
 
             //2nd assignment
-            DataSet dsContacts = new DataSet();
             dsContacts = DL_Class.GetContactUsingDBWithConfig();
 
             //3rd assignment - Get info from DB but the connection string details from web.conf file
-
+            //var dbService = new TestCL.MyPhotographyService.MyPhotographyInfoServiceClient();
+            //dsContacts = dbService.GetContactUsingDBWithConfig();
 
             //Transfer DataSet to Object
             if (dsContacts.Tables.Count > 0)
@@ -71,9 +74,14 @@ namespace Business
         {
             ML_Class image = new ML_Class();
             var imageList = new List<ML_Class>();
-
             DataSet dsImages = new DataSet();
-            dsImages = DL_Class.GetImagesUsingDBWithConfig();
+
+            //2nd Assignment
+            //dsImages = DL_Class.GetImagesUsingDBWithConfig();
+
+            //3rd assignment - Get info from DB but the connection string details from web.conf file
+            var dbService = new TestCL.MyPhotographyService.MyPhotographyInfoServiceClient();
+            dsImages = dbService.GetImagesUsingDBWithConfig();
 
             //Transfer DataSet to Object
             if (dsImages.Tables.Count > 0)

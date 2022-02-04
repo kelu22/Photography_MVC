@@ -17,7 +17,7 @@ namespace DataAccess
             DataSet dsContacts = new DataSet();
 
             //Config Details and SQL Connection
-            var cs = ConfigurationManager.ConnectionStrings["ContactsConnection_DEV"].ConnectionString;
+            string cs = ConfigurationManager.ConnectionStrings["ContactsConnection_DEV"].ConnectionString;
 
             SqlConnection con = new SqlConnection(cs);
             string sql = null;
