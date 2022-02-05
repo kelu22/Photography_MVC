@@ -19,8 +19,8 @@ namespace Business
 
             // 2nd Assignment
             // Get the contact from database but get the connection string from web.Config file
-            DataSet dsGetContactReport = new DataSet();
-            dsGetContactReport = DL_Class.GetContactUsingDBWithConfig();
+           // DataSet dsGetContactReport = new DataSet();
+            //dsGetContactReport = DL_Class.GetContactUsingDBWithConfig();
 
             // 3rd Assignment
             // Calling web service - Get the contact from database but get the connection string from web.Config file
@@ -50,11 +50,11 @@ namespace Business
 
 
             //2nd assignment
-            dsContacts = DL_Class.GetContactUsingDBWithConfig();
+            //dsContacts = DL_Class.GetContactUsingDBWithConfig();
 
             //3rd assignment - Get info from DB but the connection string details from web.conf file
-            //var dbService = new TestCL.MyPhotographyService.MyPhotographyInfoServiceClient();
-            //dsContacts = dbService.GetContactUsingDBWithConfig();
+            var dbService = new TestCL.MyPhotographyService.MyPhotographyInfoServiceClient();
+            dsContacts = dbService.GetContactUsingDBWithConfig();
 
             //Transfer DataSet to Object
             if (dsContacts.Tables.Count > 0)
